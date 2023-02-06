@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feb-coding</title>
+    <style>
+      input[type="text"] {
+        padding: 10px;
+        font-size: 20px;
+        width: 400px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Feb-coding on top</h1>
+    <h2>Base64 Encoder</h2>
+    <p>Ange a sträng till encoden:</p>
+    <input type="text" id="inputText" />
+    <br />
+    <br />
+    <button id="encodeBtn">Encode</button>
+    <br />
+    <br />
+    <p>Encoded result:</p>
+    <p id="result"></p>
+    <script>
+        //HEJSAN// 
+      const encodeBtn = document.getElementById("encodeBtn");
+      const inputText = document.getElementById("inputText");
+      const result = document.getElementById("result");
+      
+      encodeBtn.addEventListener("click", function () {
+        result.innerHTML = btoa(inputText.value);
+      });
+    </script>
+  </body>
+</html>
